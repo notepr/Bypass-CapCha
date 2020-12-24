@@ -23,5 +23,6 @@ namespace Bypass_CapCha
         {
             InitializeComponent();
         }
+
     }
 }
