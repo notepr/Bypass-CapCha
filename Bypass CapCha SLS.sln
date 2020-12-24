@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bypass Capcha", "Bypass CapCha\Bypass Capcha.csproj", "{ED432CCF-C0BE-4CB6-BEF1-21C514B2B5EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bypass Capcha From", "Bypass Capcha From\Bypass Capcha From.csproj", "{F465AAF4-4600-4970-9E8C-45114C3C34E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED432CCF-C0BE-4CB6-BEF1-21C514B2B5EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED432CCF-C0BE-4CB6-BEF1-21C514B2B5EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED432CCF-C0BE-4CB6-BEF1-21C514B2B5EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED432CCF-C0BE-4CB6-BEF1-21C514B2B5EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F465AAF4-4600-4970-9E8C-45114C3C34E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F465AAF4-4600-4970-9E8C-45114C3C34E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F465AAF4-4600-4970-9E8C-45114C3C34E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F465AAF4-4600-4970-9E8C-45114C3C34E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF473539-B4B6-4E31-936C-403CA978A056}
+	EndGlobalSection
+EndGlobal
