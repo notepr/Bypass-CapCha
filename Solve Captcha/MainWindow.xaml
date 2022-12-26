@@ -1,0 +1,169 @@
+﻿<Window x:Class="Solve_Captcha.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Solve_Captcha"
+        mc:Ignorable="d"
+        Title="Solve Captcha 1.0.0"
+        Height="215"
+        Width="255"
+        Background="#FFEBEFF9"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="Button"
+               x:Key="RoundButton">
+            <Style.Resources>
+                <!--<Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                            Value="5"></Setter>
+                </Style>-->
+            </Style.Resources>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="185" />
+            <ColumnDefinition Width="63" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Image x:Name="image"
+               Grid.Row="1" />
+        <Button Content="Setting"
+                FontWeight="Bold"
+                Background="Yellow"
+                Style="{DynamicResource RoundButton}"
+                HorizontalAlignment="Left"
+                Margin="10,0,0,0"
+                VerticalAlignment="Center"
+                Height="26"
+                Click="Button_Click"
+                Width="46" />
+        <Button Content="Snipping"
+                FontWeight="Bold"
+                Background="#FF7878E8"
+                x:Name="btnSnipping"
+                Style="{DynamicResource RoundButton}"
+                HorizontalAlignment="Left"
+                Margin="64,0,0,0"
+                VerticalAlignment="Center"
+                Height="26"
+                Click="btnSnipping_Click"
+                Width="56" />
+        <Button Content="Submit"
+                Background="Green"
+                FontWeight="Bold"
+                x:Name="btnSubmit"
+                Style="{DynamicResource RoundButton}"
+                HorizontalAlignment="Left"
+                Margin="128,0,0,0"
+                VerticalAlignment="Center"
+                Height="26"
+                Click="btnSubmit_Click"
+                Width="48" />
+        <TextBox HorizontalAlignment="Left"
+                 x:Name="txtDoneCap"
+                 Margin="10,0,0,0"
+                 TextWrapping="Wrap"
+                 Text=""
+                 VerticalAlignment="Center"
+                 Width="82"
+                 Grid.Row="2"
+                 RenderTransformOrigin="0.335,0.793"
+                 Height="22" />
+        <Button Content=""
+                x:Name="btnNotiColor"
+                HorizontalAlignment="Left"
+                Margin="3,0,0,0"
+                VerticalAlignment="Center"
+                Width="47"
+                Height="26"
+                Background="Red"
+                Grid.Column="1" />
+        <Button Content="Copy"
+                Background="Gray"
+                Style="{DynamicResource RoundButton}"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Height="22"
+                Grid.Row="2"
+                Width="42"
+                Click="Button_Click_1"
+                Margin="106,0,0,0" />
+        <CheckBox Content="Clipboard"
+                  x:Name="chkSaveTo"
+                  HorizontalAlignment="Left"
+                  Margin="160,0,0,0"
+                  Grid.Row="2"
+                  VerticalAlignment="Center"
+                  Click="chkSaveTo_Click"
+                  Grid.ColumnSpan="2" />
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="10,0,0,0"
+                   Grid.Row="3"
+                   x:Name="lblIsSelect"
+                   TextWrapping="Wrap"
+                   Text=""
+                   VerticalAlignment="Center"
+                   Width="109"
+                   Height="20" />
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="124,0,0,0"
+                   Grid.Row="3"
+                   Background="#FFF7F7C7"
+                   x:Name="lblNoti"
+                   TextWrapping="Wrap"
+                   VerticalAlignment="Center"
+                   Width="121"
+                   Grid.ColumnSpan="2"
+                   Height="20" />
+        <CheckBox Content="OnTop"
+                  x:Name="chkOnTop"
+                  HorizontalAlignment="Center"
+                  Margin="0,3,0,0"
+                  Grid.Row="1"
+                  VerticalAlignment="Top"
+                  Grid.Column="1"
+                  Width="64"
+                  Click="chkOnTop_Click" />
+        <CheckBox Content="Green"
+                  x:Name="chkGreen"
+                  HorizontalAlignment="Center"
+                  Grid.Row="1"
+                  VerticalAlignment="Center"
+                  Width="64"
+                  Grid.Column="1"
+                  Click="chkGreen_Click" />
+        <CheckBox Content="Yellow"
+                  x:Name="chkYellow"
+                  HorizontalAlignment="Center"
+                  Grid.Row="1"
+                  VerticalAlignment="Top"
+                  Width="64"
+                  Click="chkGreen_Click"
+                  Grid.Column="1"
+                  Margin="0,43,0,0" />
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="2,0,0,0"
+                   TextWrapping="Wrap"
+                   Text="Facebook :"
+                   VerticalAlignment="Center"
+                   Width="50"
+                   FontSize="10"
+                   FontWeight="Bold"
+                   Grid.Row="4" />
+        <TextBlock Margin="56,2,0,4"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="4"><Hyperlink NavigateUri="https://www.facebook.com/notepr/"
+                                           RequestNavigate="Hyperlink_RequestNavigate"><Run Text="https://facebook.com/notepr/" /></Hyperlink></TextBlock>
+
+    </Grid>
+</Window>

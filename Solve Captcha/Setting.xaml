@@ -1,0 +1,153 @@
+﻿<Window x:Class="Solve_Captcha.Setting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Solve_Captcha"
+        mc:Ignorable="d"
+        Title="Setting"
+        Height="204"
+        Width="460"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69*" />
+            <RowDefinition Height="25*" />
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0">
+            <ListView x:Name="lvSetting"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Top"
+                      BorderBrush="Black">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment"
+                                Value="Center" />
+                        <Setter Property="BorderBrush"
+                                Value="LightGray" />
+                        <Setter Property="BorderThickness"
+                                Value="1,1,1,1" />
+                        <Setter Property="Height"
+                                Value="30" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="#"
+                                        Width="30">
+                            <GridViewColumn.HeaderContainerStyle>
+                                <Style TargetType="{x:Type GridViewColumnHeader}">
+                                    <!-- Set any properties you want to set -->
+                                    <Setter Property="FontWeight"
+                                            Value="Bold" />
+                                    <Setter Property="FontSize"
+                                            Value="15" />
+                                </Style>
+                            </GridViewColumn.HeaderContainerStyle>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding ID}"
+                                               FontWeight="Bold"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Option"
+                                        Width="95">
+                            <GridViewColumn.HeaderContainerStyle>
+                                <Style TargetType="{x:Type GridViewColumnHeader}">
+                                    <!-- Set any properties you want to set -->
+                                    <Setter Property="FontWeight"
+                                            Value="Bold" />
+                                    <Setter Property="FontSize"
+                                            Value="15" />
+                                </Style>
+                            </GridViewColumn.HeaderContainerStyle>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}"
+                                               FontWeight="Bold"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="KEY"
+                                        Width="160">
+                            <GridViewColumn.HeaderContainerStyle>
+                                <Style TargetType="{x:Type GridViewColumnHeader}">
+                                    <!-- Set any properties you want to set -->
+                                    <Setter Property="FontWeight"
+                                            Value="Bold" />
+                                    <Setter Property="FontSize"
+                                            Value="15" />
+                                </Style>
+                            </GridViewColumn.HeaderContainerStyle>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding Key}"
+                                             Width="140"
+                                             TextWrapping="NoWrap"></TextBox>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Select"
+                                        Width="65">
+                            <GridViewColumn.HeaderContainerStyle>
+                                <Style TargetType="{x:Type GridViewColumnHeader}">
+                                    <!-- Set any properties you want to set -->
+                                    <Setter Property="FontWeight"
+                                            Value="Bold" />
+                                    <Setter Property="FontSize"
+                                            Value="15" />
+                                </Style>
+                            </GridViewColumn.HeaderContainerStyle>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox IsChecked="{Binding IsSelect}"
+                                              Checked="CheckBox_Checked"></CheckBox>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Amount"
+                                        Width="80">
+                            <GridViewColumn.HeaderContainerStyle>
+                                <Style TargetType="{x:Type GridViewColumnHeader}">
+                                    <!-- Set any properties you want to set -->
+                                    <Setter Property="FontWeight"
+                                            Value="Bold" />
+                                    <Setter Property="FontSize"
+                                            Value="15" />
+                                </Style>
+                            </GridViewColumn.HeaderContainerStyle>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Amount}"
+                                               FontWeight="Bold"></TextBlock>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </GroupBox>
+        <Button Content="Done"
+                Background="Green"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                Margin="390,15,0,0"
+                Grid.Row="1"
+                VerticalAlignment="Top"
+                Width="48"
+                Height="25"
+                Click="Button_Click" />
+        <Button Content="Check Amount"
+                Background="Yellow"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                Margin="265,15,0,0"
+                Grid.Row="1"
+                x:Name="btnCheckAmount"
+                VerticalAlignment="Top"
+                Width="110"
+                Height="25"
+                Click="btnCheckAmount_Click" />
+    </Grid>
+</Window>

@@ -1,9 +1,0 @@
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\bin\Debug\Bypass Capcha From.exe
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\bin\Debug\Bypass Capcha From.pdb
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\obj\Debug\Bypass Capcha From.csprojAssemblyReference.cache
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\obj\Debug\Bypass_Capcha_From.Properties.Resources.resources
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\obj\Debug\Bypass Capcha From.csproj.GenerateResource.cache
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\obj\Debug\Bypass Capcha From.csproj.CoreCompileInputs.cache
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\obj\Debug\Bypass Capcha From.exe
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\obj\Debug\Bypass Capcha From.pdb
-C:\Users\Admin\source\repos\Bypass CapCha SLS\Bypass Capcha From\obj\Debug\Bypass_Capcha_From.Form1.resources
